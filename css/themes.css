@@ -1,0 +1,65 @@
+/* Additional theme styles can be added here */
+
+/* Print Styles */
+@media print {
+    .header,
+    .sidebar,
+    .carousel-container,
+    .save-btn,
+    .rating-modal {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 12pt;
+    }
+    
+    .page {
+        display: block !important;
+        min-height: auto;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --bg-primary: #FFFFFF;
+        --text-primary: #000000;
+        --text-secondary: #333333;
+        --accent-primary: #0000FF;
+        --accent-secondary: #FF0000;
+    }
+    
+    .dark-mode {
+        --bg-primary: #000000;
+        --text-primary: #FFFFFF;
+        --text-secondary: #CCCCCC;
+        --accent-primary: #00FFFF;
+        --accent-secondary: #FFFF00;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .pearl-icon {
+        animation: none;
+    }
+    
+    .carousel-track {
+        animation: none;
+    }
+    
+    .portal-card:hover {
+        transform: none;
+    }
+}
