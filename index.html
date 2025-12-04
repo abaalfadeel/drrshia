@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درر الشيعة - Shia Pearls</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body class="bg-pattern-1">
+    <!-- Corner Images -->
+    <div class="corner-image top-left">
+        <img src="images/corner-top-left.png" alt="زخرفة علوية">
+    </div>
+    <div class="corner-image bottom-right">
+        <img src="images/corner-bottom-right.png" alt="زخرفة سفلية">
+    </div>
+    
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+    
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <!-- سيتم تحميله عبر JavaScript -->
+    </aside>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header" id="header">
+            <!-- سيتم تحميله عبر JavaScript -->
+        </header>
+        
+        <!-- Pages -->
+        <div id="home-page" class="page active"></div>
+        <div id="content-page" class="page"></div>
+        <div id="forum-page" class="page"></div>
+        <div id="question-page" class="page"></div>
+        <div id="developer-page" class="page"></div>
+        <div id="login-page" class="page"></div>
+        <div id="register-page" class="page"></div>
+        <div id="profile-page" class="page"></div>
+    </div>
+    
+    <!-- Bottom Carousel -->
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <!-- سيتم تحميله عبر JavaScript -->
+        </div>
+    </div>
+    
+    <!-- Save Button -->
+    <button id="save-btn" class="save-btn">
+        💾 حفظ
+    </button>
+    
+    <!-- Rating Modal -->
+    <div id="rating-modal" class="rating-modal">
+        <!-- سيتم تحميله عبر JavaScript -->
+    </div>
+    
+    <!-- Modals -->
+    <div id="background-modal"></div>
+    <div id="alert-modal"></div>
+    
+    <!-- JavaScript Files -->
+    <script src="js/utils.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/forum.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Initialize -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initApp();
+        });
+    </script>
+</body>
+  </html>
